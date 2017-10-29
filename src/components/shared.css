@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Akrobat-Bold';
+    src: url('fonts/Akrobat/Akrobat-Bold.otf'); /*, url('fonts/EntezareZohoor2.ttf') format('truetype'), url('fonts/EntezareZohoor2.svg') format('svg'); */
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-Black';
+    src: url('fonts/Akrobat/Akrobat-Black.otf'); /*, url('fonts/EntezareZohoor2.ttf') format('truetype'), url('fonts/EntezareZohoor2.svg') format('svg'); */
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.contentFrame {
+    font-family: "Lato", sans-serif;
+    /* height: 100%;
+    width: 100%; */
+    background: '#000000';
+}
+
+h1 {
+    font-family: 'Akrobat-Black';
+    font-size: 64px;
+    letter-spacing: 2px;
+    color: #334364;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
