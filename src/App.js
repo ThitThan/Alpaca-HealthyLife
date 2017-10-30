@@ -8,7 +8,7 @@ import HealthyKitchen from './components/HealthyKitchen';
 import HeaderLogo from './components/img/header-logo.png'
 
 import './components/font-awesome-4.7.0/css/font-awesome.min.css'
-import Bg from './components/img/bgweb.png'
+// import Bg from './components/img/bgweb.png'
  
 // const openNav = () => {
 //     // document.getElementById("mySidenav").style.width = "100%
