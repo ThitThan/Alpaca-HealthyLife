@@ -4,6 +4,7 @@ body {
 
 .titleBar {
     display: -webkit-flex;
+    
     display: flex;
     justify-content: space-between;
 

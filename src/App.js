@@ -27,6 +27,7 @@ class NavTop extends React.Component {
         // Fix the 'this' keyword for these functions
         this.openNav = this.openNav.bind(this);
         this.closeNav = this.closeNav.bind(this);
+        this.navLoseFocus = this.navLoseFocus.bind(this);
     }
 
     openNav() {
@@ -43,9 +44,16 @@ class NavTop extends React.Component {
         })
     }
 
+    navLoseFocus() {
+        if (this.state.navAlpha == 1.0) {
+            this.closeNav();
+        }
+    }
+
     render() {
         return (
             <div style={{ background: '#f6f6f6' }}>
+            
                 <div id="mySidenav" className="sidenav" style={{ width: this.state.navWidth, opacity: this.state.navAlpha }}>
                     <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>&times;</a>
                     <Link to='/' onClick={this.closeNav}>Home</Link>
@@ -54,7 +62,7 @@ class NavTop extends React.Component {
                     <Link to='bmi-calculator' onClick={this.closeNav}>Calculator</Link>
                     <Link to='about' onClick={this.closeNav}>About</Link>
                 </div>
-            
+            <div onClick={this.navLoseFocus}>
                 {/* <h2>Animated Sidenav Example Full Width</h2>
                 <p>Click on the element below to open the navigation menu.</p> */}
                 
@@ -64,12 +72,14 @@ class NavTop extends React.Component {
                     {/* <span style={{ fontSize: '24px', cursor: 'pointer', marginLeft: '24px', color: '#ffffff' }} onClick={this.openNav} >&#9776;</span> */}
                     <i className='fa fa-bars' aria-hidden='true' style={{ fontSize: '24px', cursor: 'pointer', marginTop: '4px', color: '#ffffff' }} onClick={this.openNav} />
                     <img src={HeaderLogo} alt='' height='32px'/>
+                    <div style={{ width: '24px'}}/>
                 </div>
 
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/healthy-kitchen' component={HealthyKitchen}/>
                 </Switch>
+            </div>
             </div>
         );
     }
