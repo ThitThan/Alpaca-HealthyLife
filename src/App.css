@@ -1,6 +1,14 @@
 body {
     font-family: "Lato", sans-serif;
 }
+
+@font-face {
+    font-family: 'Akrobat-Bold';
+    src: url('components/fonts/Akrobat/Akrobat-Bold.otf'); /*, url('fonts/EntezareZohoor2.ttf') format('truetype'), url('fonts/EntezareZohoor2.svg') format('svg'); */
+    font-weight: bold;
+    font-style: normal;
+}
+
 .bg{
     z-index: -1;
     position: fixed;
@@ -40,9 +48,10 @@ body {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    font-family: 'Akrobat-Bold';
+    padding: 12px 12px 12px 32px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     color: #818181;
     display: block;
     transition: 0.3s;

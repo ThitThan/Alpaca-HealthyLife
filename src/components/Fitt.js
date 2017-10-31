@@ -1,5 +1,5 @@
 import React from 'react'
-import './dist/css/bootstrap.css'
+// import './dist/css/bootstrap.css'
 import './shared.css'
 import In01 from './img/in01.jpg' 
 import In02 from './img/in02.jpg' 

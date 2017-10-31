@@ -11,8 +11,8 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(
     <BrowserRouter>
         <span>
-        <img src={Bg} className="bg"/>
-        <App />
+            <img src={Bg} className="bg"/>
+            <App />
         </span>
     </BrowserRouter>
 , document.getElementById('root'));
