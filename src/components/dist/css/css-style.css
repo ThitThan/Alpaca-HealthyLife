@@ -349,25 +349,25 @@ tr.bmi-1 td {
 	color: #fff;
 }
 tr.bmi-2 {
-	background: #e67e22;
+	background: #2ecc71;
 }
 tr.bmi-2 td {
 	color: #fff;
 }
 tr.bmi-3 {
-	background: #2ecc71;
+	background: #f1c40f;
 }
 tr.bmi-3 td {
 	color: #fff;
 }
 tr.bmi-4 {
-	background: #f1c40f;
+	background: #f39c12;
 }
 tr.bmi-4 td {
 	color: #fff;
 }
 tr.bmi-5 {
-	background: #f39c12;
+	background: #e67e22;
 }
 tr.bmi-5 td {
 	color: #fff;
@@ -377,16 +377,16 @@ tr.bmi-5 td {
 	border-left: 3px solid #e74c3c;
 }
 .bmi-desc-2 {
-	border-left: 3px solid #e67e22;
-}
-.bmi-desc-3 {
 	border-left: 3px solid #2ecc71;
 }
-.bmi-desc-4 {
+.bmi-desc-3 {
 	border-left: 3px solid #f1c40f;
 }
-.bmi-desc-5 {
+.bmi-desc-4 {
 	border-left: 3px solid #f39c12;
+}
+.bmi-desc-5 {
+	border-left: 3px solid #e67e22;
 }
 .bmi-credit {
 	margin: 20px 0 0 0 !important;
