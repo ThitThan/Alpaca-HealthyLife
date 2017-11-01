@@ -1,11 +1,14 @@
 import React from 'react'
 import Slider from 'react-slick'
 import './shared.css'
-import Fitt from './Fitt'
+import '../index.css'
 
-import In01 from './img/in01.jpg' 
-import In02 from './img/in02.jpg' 
-import In03 from './img/in03.jpg' 
+import In01 from './img/in01.jpg'
+import In02 from './img/in02.jpg'
+import In03 from './img/in03.jpg'
+
+import NewsUpdate from './healthylife/pages/components/newupdate.js'
+import Footer from './healthylife/pages/components/footer.js'
 
 class Home extends React.Component {
     render() {
@@ -37,6 +40,9 @@ class Home extends React.Component {
                     <div className="col-4"><img src={In02} className="fitt"/></div>
                     <div className="col-4"><img src={In03} className="fitt"/></div>
                 </Slider>
+
+                <NewsUpdate />
+                <Footer />
             </div>
         );
     }

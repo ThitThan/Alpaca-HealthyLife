@@ -1,6 +1,8 @@
 import React from 'react'
 import './shared.css'
 
+// import Hungry from './healthylife/pages/fact/facthungry'
+
 class HealthyKitchen extends React.Component {
     render() {
         return (

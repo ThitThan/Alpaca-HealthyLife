@@ -2,8 +2,10 @@ import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import './App.css';
 import './components/dist/css/css-style.css';
+
 import Home from './components/Home';
 import HealthyKitchen from './components/HealthyKitchen';
+import HealthyFacts from './components/HealthyFacts';
 import Bmi from './components/Bmi';
 
 import HeaderLogo from './components/img/header-logo.png'
@@ -47,7 +49,7 @@ class NavTop extends React.Component {
     }
 
     navLoseFocus() {
-        if (this.state.navAlpha == 1.0) {
+        if (this.state.navAlpha === 1.0) {
             this.closeNav();
         }
     }
@@ -81,6 +83,7 @@ class NavTop extends React.Component {
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/healthy-kitchen' component={HealthyKitchen}/>
+                    <Route path='/healthy-facts' component={HealthyFacts}/>
                     <Route path='/bmi-calculator' component={Bmi}/>
                 </Switch>
             </div>
