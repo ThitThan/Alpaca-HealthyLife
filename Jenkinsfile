@@ -40,7 +40,7 @@ pipeline{
 		sh 'echo "============= [ Production [4/4] - copy to Production Server ] ================"'
 		sh 'sh /var/www/copy.sh'
 		sh 'echo "============= [ Production [4/4] - Starting Server ] =========================="'
-		sh 'sh /var/www/start.sh'
+		sh 'sudo -u id60058 -s "/var/www/start.sh"'
 		sh 'echo "==============================================================================="'
 	  }
     }
