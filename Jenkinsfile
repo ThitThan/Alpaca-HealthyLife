@@ -34,14 +34,12 @@ pipeline{
 	  steps{
 		sh 'echo "============= [ Step : Production. [4/4] ] ===================================="'
 		//Delete Service
-		sh 'echo "============= [ Production [4/4] - Deleteing old project ] ===================="'
-		sh 'sudo -u id60058 -s && pm2 delete healthy || :'
-		sh 'echo "============= [ Production [4/4] - Stoping Old Production ] ==================="'
-		sh 'sudo -u id60058 -s && rm -rf /var/www/Alpaca-HealthyLife/*'
+		sh 'echo "============= [ Production [4/4] - Deleteing & Stoping Old Production ] ==================="'
+		sh 'sudo -u id60058 -s "/var/www/del.sh"'
 		sh 'echo "============= [ Production [4/4] - copy to Production Server ] ================"'
-		sh 'sudo -u id60058 -s && cp -r . /var/www/Alpaca-HealthyLife'
+		sh 'cp -r . /var/www/Alpaca-HealthyLife/'
 		sh 'echo "============= [ Production [4/4] - Starting Server ] =========================="'
-		sh 'sudo -u id60058 -s && cd /var/www/Alpaca-HealthyLife && pm2 start yarn --name healthy -- start'
+		sh 'sudo -u id60058 -s "/var/www/start.sh"'
 		sh 'echo "==============================================================================="'
 	  }
     }
