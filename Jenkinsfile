@@ -37,7 +37,7 @@ pipeline{
 		sh 'echo "============= [ Production [4/4] - Deleteing & Stoping Old Production ] ==================="'
 		sh 'sudo -u id60058 -s "/var/www/del.sh"'
 		sh 'echo "============= [ Production [4/4] - copy to Production Server ] ================"'
-		sh 'cp -r . /var/www/Alpaca-HealthyLife/'
+		sh 'sudo -u id60058 -s "/var/www/copy.sh"'
 		sh 'echo "============= [ Production [4/4] - Starting Server ] =========================="'
 		sh 'sudo -u id60058 -s "/var/www/start.sh"'
 		sh 'echo "==============================================================================="'
