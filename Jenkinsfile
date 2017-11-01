@@ -3,7 +3,7 @@ pipeline{
   stages {
 	stage('build'){
 	  steps{
-	  	sh 'echo "========================================================"'
+	  sh 'echo "========================================================"'
 		sh 'echo "============= [ Step : Build [1/4] ] ==================="'
 		sh 'echo "============= [ Build [1/4] - Installing ] ============="'
     sh 'echo "============= [ Build [1/4] - Building ] ==============="'
@@ -35,13 +35,13 @@ pipeline{
 		sh 'echo "============= [ Step : Production. [4/4] ] ===================================="'
 		//Delete Service
 		sh 'echo "============= [ Production [4/4] - Deleteing old project ] ===================="'
-		sh 'sudo id60058 && pm2 delete healthy || :'
+		sh 'sudo -u id60058 -s && pm2 delete healthy || :'
 		sh 'echo "============= [ Production [4/4] - Stoping Old Production ] ==================="'
-		sh 'sudo id60058 && rm -rf /var/www/Alpaca-HealthyLife/*'
+		sh 'sudo -u id60058 -s && rm -rf /var/www/Alpaca-HealthyLife/*'
 		sh 'echo "============= [ Production [4/4] - copy to Production Server ] ================"'
-		sh 'sudo id60058 && cp -r . /var/www/Alpaca-HealthyLife'
+		sh 'sudo -u id60058 -s && cp -r . /var/www/Alpaca-HealthyLife'
 		sh 'echo "============= [ Production [4/4] - Starting Server ] =========================="'
-		sh 'sudo id60058 && cd /var/www/Alpaca-HealthyLife && pm2 start yarn --name healthy -- start'
+		sh 'sudo -u id60058 -s && cd /var/www/Alpaca-HealthyLife && pm2 start yarn --name healthy -- start'
 		sh 'echo "==============================================================================="'
 	  }
     }
