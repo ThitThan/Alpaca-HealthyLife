@@ -23,7 +23,7 @@ pipeline{
 		sh 'echo "=================== [ Step : Development. [3/4] ] ====================="'
 		//Start Dev
 		sh 'echo "============== [ Development [3/4] - Starting Service ] ==============="'
-		sh 'cd Alpaca-HealthyLife && pm2 start yarn --name healthy_dev -- start'
+		sh 'pm2 start yarn --name healthy_dev -- start'
 		input "ผ่านมั้ย ?"
 		sh 'echo "============= [ Development [3/4] - Deleting Service ] ================"'
 		sh 'pm2 delete healthy_dev'
