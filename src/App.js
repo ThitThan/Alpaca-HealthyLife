@@ -1,9 +1,10 @@
 import React from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import './App.css';
-
+import './components/dist/css/css-style.css';
 import Home from './components/Home';
 import HealthyKitchen from './components/HealthyKitchen';
+import Bmi from './components/Bmi';
 
 import HeaderLogo from './components/img/header-logo.png'
 
@@ -80,6 +81,7 @@ class NavTop extends React.Component {
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/healthy-kitchen' component={HealthyKitchen}/>
+                    <Route path='/bmi-calculator' component={Bmi}/>
                 </Switch>
             </div>
             </div>
