@@ -8,7 +8,7 @@ class HealthyFacts extends React.Component {
         return (
             <div className = "container">
                 <Hungry />
-            </div>
+            </div> 
         );
     }
 }
