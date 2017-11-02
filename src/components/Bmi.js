@@ -1,5 +1,6 @@
 import React from 'react'
 import './dist/css/css-style.css'
+import Footer from './healthylife/pages/components/footer'
 
 
 class Bmi extends React.Component {
@@ -143,6 +144,7 @@ class Bmi extends React.Component {
                            </div> 
                 </div>
                </div>
+               <Footer/>
             </div>
         );
     }
