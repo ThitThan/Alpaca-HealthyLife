@@ -1,0 +1,65 @@
+.text-white{
+    color : white;
+}
+.bg-pink{
+    background-color: #F5696C !important;
+}
+.footer{
+    font-size: 11px;
+}
+@font-face{
+    font-family: 'Akrobat';
+    src: url('../font/Akrobat-Black.otf');
+}
+.Akrobat{
+    font-family: 'Akrobat'
+}
+.fontcolorgrey{
+    color: #726B67;
+}
+@font-face{
+    font-family: 'Nithan';
+    src: url('../font/Nithan.ttf');
+}
+.Nithan{
+    font-family: 'Nithan';
+}
+.center{
+    text-align: center;
+}
+.fontsize-45px{
+    font-size: 45px;
+    color: #726B67;
+}
+.fontsize-30px{
+    font-size: 30px;
+    color: #726B67;
+}
+.fontsize-25px{
+    font-size: 25px;
+    color: #726B67;
+}
+.color-button{
+    background-color: #FFCAB0;
+}
+.color-blue{
+    color: #ACCBF5;
+}
+.right{
+    right : 0 !important;
+}
+.margin-top{
+    marginTop: '20px';
+}
+
+
+@media screen and (min-width: 320px) {
+    .fit {
+        width : 100%
+    }
+    .fit2 {
+        width : 100%;
+        height: 80%;
+    }
+}
+

@@ -9,6 +9,16 @@ import HealthyFacts from './components/HealthyFacts';
 import Bmi from './components/Bmi';
 import About from './components/About';
 
+// kitchen page
+import Kitchenpage from './components/healthykitchenpage'
+
+// bootstrap 4.0
+import './components/dist/bootstrap-4.0.0-beta.2/dist/css/bootstrap-reboot.min.css'
+
+// jewStyle
+import './static/css/jewStyle.css'
+
+
 import HeaderLogo from './components/img/header-logo.png'
 
 import './components/font-awesome-4.7.0/css/font-awesome.min.css'
@@ -87,6 +97,8 @@ class NavTop extends React.Component {
                     <Route path='/healthy-facts' component={HealthyFacts}/>
                     <Route path='/bmi-calculator' component={Bmi}/>
                     <Route path='/about' component={About}/>
+                    <Route exact path='/kitchen' component={Kitchenpage} />                    
+                    <Route path='/kitchen/steambuns' component={Kitchenpage} />
                     
                 </Switch>
             </div>
