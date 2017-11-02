@@ -2,7 +2,7 @@ import React from 'react'
 
 // import '../../static/css/bootstrap.min.css'
 // import '../../static/css/factchilli.css'
-// import '../../static/css/Style.css'
+import '../../static/css/Style.css'
 
 const footer = () => (
 
