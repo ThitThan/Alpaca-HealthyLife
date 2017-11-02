@@ -4,16 +4,22 @@ import './App.css';
 import './components/dist/css/css-style.css';
 
 import Home from './components/Home';
-import HealthyKitchen from './components/HealthyKitchen';
-import HealthyFacts from './components/HealthyFacts';
+import HealthyKitchen from './components/healthykitchenpage';
+import HealthyFacts from './components/factpage';
 import Bmi from './components/Bmi';
 import About from './components/About';
 
 // kitchen page
 import Kitchenpage from './components/healthykitchenpage'
+import Dolly from './components/kitchen/dolly'
+import Muffin from './components/kitchen/bananamuffin'
+import BananaTopping from './components/kitchen/bananatopping'
+import Riceberrymango from './components/kitchen/riceberry+mango'
+import Steakchicken from './components/kitchen/steakchicken'
+import Steambun from './components/kitchen/steambuns'
 
 // bootstrap 4.0
-import './components/dist/bootstrap-4.0.0-beta.2/dist/css/bootstrap-reboot.min.css'
+import './components/dist/bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css'
 
 // jewStyle
 import './static/css/jewStyle.css'
@@ -101,11 +107,23 @@ class NavTop extends React.Component {
                     <Route path='/healthy-facts' component={HealthyFacts}/>
                     <Route path='/bmi-calculator' component={Bmi}/>
                     <Route path='/about' component={About}/>
+
+                    <Route exact path='/kitchen' component={HealthyKitchen} />                    
+                    <Route path='/kitchen/steambuns' component={Steambun} />
+                    <Route path='/kitchen/dolly' component={Dolly} />
+                    <Route path='/kitchen/muffin' component={Muffin} />
+                    <Route path='/kitchen/bananaTopping' component={BananaTopping} />
+                    <Route path='/kitchen/riceberrymango' component={Riceberrymango} />
+                    <Route path='/kitchen/steakchicken' component={Steakchicken} />
+                    
+                    
+
                     <Route exact path='/kitchen' component={Kitchenpage} />
                     
                     {/* <Route path='/healthy-kitchen/bananamuffin' component={BananaMuffin} /> */}
                     <Route path='/kitchen/steambun' component={SteamBun} />
                     {/* <Route path='/healthy-kitchen/bananatopping' component={BananaTopping} /> */}
+
                     
                 </Switch>
             </div>
