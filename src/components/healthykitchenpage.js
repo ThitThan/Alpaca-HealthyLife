@@ -14,6 +14,7 @@ const healthykitchenpage = () => (
 
 <div>
 <div className = "container">
+<br/>
 <p className = "fontcolorgrey fontsize-45px Akrobat">Healthy Kitchen</p>
 <br className = "color-blue"/>
     <div className="row">
@@ -81,6 +82,7 @@ const healthykitchenpage = () => (
     </div>
 </div>
 <br/>   
+<br />
 <Footer/>
 </div>
 )

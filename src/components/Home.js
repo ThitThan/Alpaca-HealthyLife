@@ -30,7 +30,7 @@ class Home extends React.Component {
             <div>
                 <div className = "container">
                     <br/>
-                    <h1>HEALTHY LIFE</h1>
+                    <p className = "fontcolorgrey fontsize-45px Akrobat">Healthy Life</p>
                     {/* <p>u n d e r   c o n s t r u c t i o n</p> */}
                     <br/>
         
