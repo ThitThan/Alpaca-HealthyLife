@@ -7,6 +7,7 @@ import Home from './components/Home';
 import HealthyKitchen from './components/HealthyKitchen';
 import HealthyFacts from './components/HealthyFacts';
 import Bmi from './components/Bmi';
+import About from './components/About';
 
 import HeaderLogo from './components/img/header-logo.png'
 
@@ -85,6 +86,7 @@ class NavTop extends React.Component {
                     <Route path='/healthy-kitchen' component={HealthyKitchen}/>
                     <Route path='/healthy-facts' component={HealthyFacts}/>
                     <Route path='/bmi-calculator' component={Bmi}/>
+                    <Route path='/about' component={About}/>
                     
                 </Switch>
             </div>
