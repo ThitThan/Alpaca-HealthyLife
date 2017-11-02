@@ -26,13 +26,13 @@ const healthykitchenpage = () => (
             <button type="button" className="btn float-right Nithan color-button">view more</button>
             </Link>
             </p>
+            
         </div>
-
         <div className="col-xs-12 col-lg-4" style={{ marginTop: '20px' }}>
             <img className = "fit2" src={Kaiob} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">ไก่อบผลไม้
-            <Link prefetch to="/kitchen/steakchicken.js">
+            <Link prefetch to="/kitchen/steakchicken">
             <button type="button" className="btn pull-right Nithan color-button">view more</button>
             </Link>
             </p>
@@ -43,7 +43,7 @@ const healthykitchenpage = () => (
             <img className = "fit2" src = {Rice} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">ข้าวเหนียวมะม่วง
-            <Link prefetch to="/kitchen/riceberry+mango.js">
+            <Link prefetch to="/kitchen/riceberrymango">
             <button type="button" className="btn pull-right Nithan color-button">view more</button>
             </Link>
             </p>
@@ -56,7 +56,7 @@ const healthykitchenpage = () => (
             <img className = "fit2" src = {Muffin}  width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">เค้กกล้วยหอม
-            <Link prefetch to="/kitchen/bananamuffin">
+            <Link prefetch to="/kitchen/muffin">
             <button type="button" className="btn pull-right Nithan color-button">view more</button>
             </Link>
             </p>
@@ -65,7 +65,7 @@ const healthykitchenpage = () => (
             <img className = "fit2" src = {Bnnt} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">กล้วยหอมท็อปปิ้งธัญพืช
-            <Link prefetch to="/kitchen/bananatopping.js">
+            <Link prefetch to="/kitchen/bananaTopping">
             <button type="button" className="btn pull-right Nithan color-button">view more</button>
             </Link>
             </p>
@@ -74,7 +74,7 @@ const healthykitchenpage = () => (
             <img className = "fit2" src = {Dolly} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">ดอลลี่อบไส้ผลไม้
-            <Link prefetch to="/kitchen/dolly.js">
+            <Link prefetch to="/kitchen/dolly">
             <button type="button" className="btn pull-right Nithan color-button">view more</button>
             </Link>
             </p>

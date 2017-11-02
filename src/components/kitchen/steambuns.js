@@ -1,26 +1,28 @@
 import React from 'react'
 import Footer from '../../components/footer'
+import { Link } from 'react-router-dom'
+import Steambun from "../../static/img/วิธีทำซาลาเปา.jpg"
 
 const steambun = () => (
 
 <div>
 <div className = "container">
     <div className = "center">
-        <p className = "font-detail fontsize-45px"> ซาลาเปาไส้กุ้งสับ </p>
-        <img src = "../static/img/วิธีทำซาลาเปา.jpg" width = "450px"/>
+        <p className = "Nithan fontsize-45px"> ซาลาเปาไส้กุ้งสับ </p>
+        <img src = {Steambun} width = "450px"/>
     </div>
     <div>
         <br/>
-        <p className = "font-detail fontsize-30px">ส่วนผสม</p>
-        <p className = "font-detail fontsize-25px">
+        <p className = "Nithan fontsize-30px">ส่วนผสม</p>
+        <p className = "Nithan fontsize-25px">
         1.ผักกาดขาวหัวย่อมๆ 1 หัว<br/>
         2.กุ้งสับหรืออกไก่สับ 150-200 กรัม<br/>
         3.กระเทียมสับ 1 ช้อนโต๊ะ<br/>
         4.รากผักชีสับ 1 ช้อนโต๊ะ<br/>
         5.ซีอิ๊วหรือน้ำปลา Low Sodium<br/>
         </p>
-        <p className = "font-detail fontsize-30px">วิธีทำ</p>
-        <p className = "font-detail fontsize-25px">
+        <p className = "Nithan fontsize-30px">วิธีทำ</p>
+        <p className = "Nithan fontsize-25px">
         1.นำผักกาดขาว ฉีกเป็นใบๆต้มในน้ำเดือดให้ใบนิ่ม<br/>
         2.นำกุ้งสับมาผสมคลุกเคล้ากับ กระเทียมรากผักชี ซีอิ๊วหรือน้ำปลา Low Sodium นิดหน่อย พักไว้<br/>
         3.นำผักกาดขาวประมาณ 3 ใบ มาเรียงใส่ชามลักษณะครึ่งวงกลม เสร็จแล้วนำกุ้งสับที่คลุกเคล้าไว้มาใส่เกลี่ยให้ทั่ว<br/>
@@ -30,7 +32,11 @@ const steambun = () => (
         7.คว่ำซาลาเปาผักของเราใส่จาน และผ่าสี่ หรือหั่นเป็นชิ้นตามชอบ <br/>
         8.ใส่น้ำซุปที่ตักออกมาเมื่อซักครู่ ใส่ลงไปในจานเสริฟทานคู่กันเป็นน้ำซุป<br/>
         </p>
-        <button type="button" class="btn ml-auto font-detail color-button">Back</button>
+        <Link prefetch to="/kitchen">
+        <a>
+        <button type="button" className="btn ml-auto Nithan color-button">Back</button>
+        </a>
+        </Link>
         <br/>
         <br/>
     </div>
