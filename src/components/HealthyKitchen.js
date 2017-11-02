@@ -10,10 +10,12 @@ import ImgSteakChicken from './healthylife/static/img/ไก่อบผลไ�
 import ImgSteamBuns from './healthylife/static/img/วิธีทำซาลาเปา.jpg'
 
 import Card from './healthylife/pages/components/KitchenCard.js'
+import Footer from './healthylife/pages/components/footer'
 
 class HealthyKitchen extends React.Component {
     render() {
         return (
+            <div>
             <div className = "container">
                 <h1>HEALTHY KITCHEN</h1>
                 <div class="row center">
@@ -25,6 +27,8 @@ class HealthyKitchen extends React.Component {
                     {/* <div class="col-xs-12 col-lg-4"><img className = "fit" src={Img2} width = "320px"/><p className = "font-detail">ผลิตภัณฑ์ออแกนิกคืออะไร ?</p></div> */}
                     {/* <div class="col-xs-12 col-lg-4"><img className = "fit" src={Img3} width = "320px"/><p className = "font-detail">หิวบ่อยมาจากสาเหตุอะไร ?</p></div> */}
                 </div>
+            </div>
+            <Footer />
             </div>
         );
     }

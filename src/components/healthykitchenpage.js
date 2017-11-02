@@ -25,8 +25,8 @@ const healthykitchenpage = () => (
             <button type="button" className="btn float-right Nithan color-button">view more</button>
             </Link>
             </p>
-            
         </div>
+
         <div className="col-xs-12 col-lg-4" style={{ marginTop: '20px' }}>
             <img className = "fit2" src={Kaiob} width = "320px" height = "280px"/>
             <br/><br/>
@@ -55,7 +55,9 @@ const healthykitchenpage = () => (
             <img className = "fit2" src = {Muffin}  width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">เค้กกล้วยหอม
+  
             <Link prefetch to="/kitchen/muffin">
+  
             <button type="button" className="btn pull-right Nithan color-button">view more</button>
             </Link>
             </p>

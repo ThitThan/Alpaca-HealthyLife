@@ -9,6 +9,11 @@
 	opacity: 0;
 	visibility: hidden;
 }
+.p3 {
+    font-size: 25px;
+    color: #726B67;
+    font-family: 'Nithan'
+}
 .overlay-body.active {
 	visibility: visible;
 	opacity: 1;
