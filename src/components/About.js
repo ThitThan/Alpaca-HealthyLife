@@ -12,9 +12,9 @@ class About extends React.Component {
         return (
             <div>
                 <div>
-                <img src={aboutweb} className="image1 bg"/>
-                <img src={Aboutphone} className="image2 bg"/>
-                
+                <img src={aboutweb} className="image1 bg2"/>
+                {/* <img src={Aboutphone} className="image2 bg2"/>
+                 */}
             </div>
             
             </div>

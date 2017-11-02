@@ -10,7 +10,7 @@ class Bmi extends React.Component {
                <div className="overlay-body"></div>
                
                    <div className="body-container">		
-               
+               {/* . */}
                        <div className="content-container">
                
                    

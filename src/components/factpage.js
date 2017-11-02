@@ -17,7 +17,7 @@ const factpage = () => (
     <div className="row">
         <div className="col-xs-12 col-lg-4">
         <Link prefetch href="../pages/fact/factchilli.js">
-            <img className = "fit2" src = {Chili}  width = "320px" height = "250px"/>
+            <img className = "fit2"  src = {Chili}  width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
             <Link prefetch href="../pages/fact/factchilli.js">
