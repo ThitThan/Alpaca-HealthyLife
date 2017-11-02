@@ -2,11 +2,12 @@ import React from 'react'
 import Footer from '../components/footer'
 import { Link } from 'react-router-dom'
 import './dist/bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css'
-import Chili from "../static/img/พริก(topic).jpg "
+import Chili from "../static/img/พริก(topic).jpg"
 import Oganic from "../static/img/ออร์แกนิก(topic).jpg"
 import Protein from "../static/img/โปรตีน(topic).jpg"
 import Hungry from "../static/img/หิวบ่อย(topic).jpg"
 import Kamin from "../static/img/ขมิ้น(topic).jpg" 
+import Dsea from "../static/img/สองโรค(topic).jpg"
 
 const factpage = () => (
 
@@ -57,16 +58,16 @@ const factpage = () => (
         </div>
         <div className="col-xs-12 col-lg-4">
         <Link prefetch href="../pages/fact/factkamin.js">
-            <img className = "fit2" src = width = "320px" height = "250px"/>
+            <img className = "fit2" src = {Kamin} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
             <Link prefetch href="../pages/fact/factkamin.js">
-            <a className = "Nithan fontsize-25px">ขมิ้นชัน อาหารเพื่อสุขภาพ</a>
+            <a className = "Nsithan fontsize-25px">ขมิ้นชัน อาหารเพื่อสุขภาพ</a>
             </Link>
         </div>
         <div className="col-xs-12 col-lg-4">
             <Link prefetch href="../pages/fact/factdisease.js">
-            <img className = "fit2" src = "../static/img/สองโรค(topic).jpg" width = "320px" height = "250px"/>
+            <img className = "fit2" src = {Dsea}  width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
             <Link prefetch href="../pages/fact/factdisease.js">

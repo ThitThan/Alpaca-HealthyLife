@@ -10,13 +10,12 @@ body {
 }
 
 .bg{
-    /* background-repeat: repeat-x!important; */
-   
     z-index: -1;
     position: fixed;
     width: 100%;
     height: 100%;
     }
+<<<<<<< HEAD
     .bg2{
         /* background-repeat: repeat-x!important; */
        
@@ -41,6 +40,8 @@ body {
           display: block;
         }
      } */
+=======
+>>>>>>> 8eb34599f2570a84d646318cf487b185e01915b6
 
 .titleBar {
     display: -webkit-flex;

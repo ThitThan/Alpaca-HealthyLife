@@ -1,6 +1,5 @@
 import React from 'react'
 import './dist/css/css-style.css'
-import Footer from './healthylife/pages/components/footer'
 
 
 class Bmi extends React.Component {
@@ -34,7 +33,7 @@ class Bmi extends React.Component {
                
                        <div className="content-style">
                
-                           <p className="p3">การหาค่าดัชนีมวลกาย (Body Mass Index : BMI) คือเป็นมาตรการที่ใช้ประเมินภาวะอ้วนและผอมในผู้ใหญ่ ตั้งแต่อายุ 16 ปีขึ้นไป สามารถทำได้โดยการชั่งน้ำหนักตัวเป็นกิโลกรัม และวัดส่วนสูงเป็นเซนติเมตร แล้วนำมาหาดัชมีมวลกาย โดยใช้โปรแกรมวัดค่าความอ้วนข้างต้น</p>
+                           <p>การหาค่าดัชนีมวลกาย (Body Mass Index : BMI) คือเป็นมาตรการที่ใช้ประเมินภาวะอ้วนและผอมในผู้ใหญ่ ตั้งแต่อายุ 20 ปีขึ้นไป สามารถทำได้โดยการชั่งน้ำหนักตัวเป็นกิโลกรัม และวัดส่วนสูงเป็นเซนติเมตร แล้วนำมาหาดัชมีมวลกาย โดยใช้โปรแกรมวัดค่าความอ้วนข้างต้น</p>
                
                            <div className="form-container">
                                <div className="field-block">
@@ -144,7 +143,6 @@ class Bmi extends React.Component {
                            </div> 
                 </div>
                </div>
-               <Footer/>
             </div>
         );
     }
