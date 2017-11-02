@@ -1,6 +1,7 @@
 import React from 'react'
 import './dist/css/css-style.css'
 
+import Footer from '../components/healthylife/pages/components/footer'
 
 class Bmi extends React.Component {
     render() {
@@ -9,7 +10,7 @@ class Bmi extends React.Component {
                <div className="overlay-body"></div>
                
                    <div className="body-container">		
-               
+               {/* . */}
                        <div className="content-container">
                
                    
@@ -143,6 +144,7 @@ class Bmi extends React.Component {
                            </div> 
                 </div>
                </div>
+               <Footer/>
             </div>
         );
     }

@@ -1,5 +1,9 @@
 import React from 'react'
 
+// import '../../static/css/bootstrap.min.css'
+// import '../../static/css/factchilli.css'
+import './healthylife/static/css/Style.css'
+
 const footer = () => (
 
 <nav className="navbar bg-pink">

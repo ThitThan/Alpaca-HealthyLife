@@ -8,6 +8,12 @@ class About extends React.Component {
     render() {
         return (
             <div>
+                <div>
+                <img src={aboutweb} className="image1 bg2"/>
+                {/* <img src={Aboutphone} className="image2 bg2"/>
+                 */}
+            </div>
+            
                 <img src={aboutweb} className="bg"/>
             </div>
         );
