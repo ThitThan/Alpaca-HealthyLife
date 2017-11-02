@@ -5,11 +5,9 @@ import './components/dist/css/css-style.css';
 
 import Home from './components/Home';
 import HealthyKitchen from './components/healthykitchenpage';
-<<<<<<< HEAD
+
 import HealthyFacts from './components/fact/factpage';
-=======
-import HealthyFacts from './components/HealthyFacts';
->>>>>>> master
+
 import Bmi from './components/Bmi';
 import About from './components/About';
 
