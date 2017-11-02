@@ -1,8 +1,8 @@
 import React from 'react'
 import Footer from '../components/footer'
 
-import '../../static/css/bootstrap.min.css'
-import '../../static/css/factchilli.css'
+// import '../../static/css/bootstrap.min.css'
+// import '../../static/css/factchilli.css'
 import '../../static/css/Style.css'
 
 const hungry =()=> (

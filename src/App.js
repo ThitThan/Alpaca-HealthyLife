@@ -85,6 +85,7 @@ class NavTop extends React.Component {
                     <Route path='/healthy-kitchen' component={HealthyKitchen}/>
                     <Route path='/healthy-facts' component={HealthyFacts}/>
                     <Route path='/bmi-calculator' component={Bmi}/>
+                    
                 </Switch>
             </div>
             </div>
