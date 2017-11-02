@@ -6,7 +6,9 @@ import Hungry from './healthylife/pages/fact/facthungry'
 class HealthyFacts extends React.Component {
     render() {
         return (
-            <Hungry />
+            <div className = "container">
+                <Hungry />
+            </div>
         );
     }
 }
