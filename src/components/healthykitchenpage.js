@@ -5,10 +5,10 @@ import Footer from '../components/footer'
 import './dist/bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css'
 import Timsom from '../static/img/ซาลาเปาไส้กุ้งสับ.jpg'
 import Kaiob from '../static/img/ไก่อบผลไม้.jpg'
-import rice from "../static/img/ข้าวไรท์เบอรี่มูน+มะม่วงน้ำดอกไม้.jpg" 
-import muffin from "../static/img/bananamuffin.png"
-import bnnt from "../static/img/กล้วยหอมท็อปปิ้ง.jpg"
-import dolly from "../static/img/ดอลลี่อบไส้ผลไม้.jpg"
+import Rice from "../static/img/ข้าวไรท์เบอรี่มูน+มะม่วงน้ำดอกไม้.jpg" 
+import Muffin from "../static/img/bananamuffin.png"
+import Bnnt from "../static/img/กล้วยหอมท็อปปิ้ง.jpg"
+import Dolly from "../static/img/ดอลลี่อบไส้ผลไม้.jpg"
 
 const healthykitchenpage = () => (
 
@@ -39,7 +39,7 @@ const healthykitchenpage = () => (
         </div>
         <br/><br/>
         <div className="col-xs-12 col-lg-4" style={{ marginTop: '20px' }}>
-            <img className = "fit2" src = {rice} width = "320px" height = "280px"/>
+            <img className = "fit2" src = {Rice} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">ข้าวเหนียวมะม่วง
             <Link prefetch to="/kitchen/riceberry+mango.js">
@@ -52,7 +52,7 @@ const healthykitchenpage = () => (
     <br/><br/>
     <div className="row">
         <div className="col-xs-12 col-lg-4" style={{ marginTop: '20px' }}>
-            <img className = "fit2" src = {muffin}  width = "320px" height = "280px"/>
+            <img className = "fit2" src = {Muffin}  width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">เค้กกล้วยหอม
             <Link prefetch to="/kitchen/bananamuffin.js">
@@ -61,7 +61,7 @@ const healthykitchenpage = () => (
             </p>
         </div>
         <div className="col-xs-12 col-lg-4" style={{ marginTop: '20px' }}>
-            <img className = "fit2" src = {bnnt} width = "320px" height = "280px"/>
+            <img className = "fit2" src = {Bnnt} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">กล้วยหอมท็อปปิ้งธัญพืช
             <Link prefetch to="/kitchen/bananatopping.js">
@@ -70,7 +70,7 @@ const healthykitchenpage = () => (
             </p>
         </div>
         <div className="col-xs-12 col-lg-4"style={{ marginTop: '20px' }}>
-            <img className = "fit2" src = {dolly} width = "320px" height = "280px"/>
+            <img className = "fit2" src = {Dolly} width = "320px" height = "280px"/>
             <br/><br/>
             <p className = "Nithan text-left fontsize-30px">ดอลลี่อบไส้ผลไม้
             <Link prefetch to="/kitchen/dolly.js">
