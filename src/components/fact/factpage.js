@@ -6,8 +6,8 @@ import Chili from "../static/img/พริก(topic).jpg"
 import Oganic from "../static/img/ออร์แกนิก(topic).jpg"
 import Protein from "../static/img/โปรตีน(topic).jpg"
 import Hungry from "../static/img/หิวบ่อย(topic).jpg"
-import Kamin from "../static/img/ขมิ้น(topic).jpg" 
-import Dsea from "../static/img/สองโรค(topic).jpg"
+import Kamin from "../static/img/ขมิ้น(topic).jpg"
+import Deas from "../static/img/สองโรค(topic).jpg"
 
 const factpage = () => (
 
@@ -17,27 +17,27 @@ const factpage = () => (
 <br className = "color-blue"/>
     <div className="row">
         <div className="col-xs-12 col-lg-4">
-        <Link prefetch href="../pages/fact/factchilli.js">
-            <img className = "fit2" src = {Chili}  width = "320px" height = "250px"/>
+        <Link prefetch href="fact/factchilli">
+            <img className = "fit2" src = {Chili} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
-            <Link prefetch href="../pages/fact/factchilli.js">
+            <Link prefetch href="fact/factchilli">
             <a className = "Nithan  fontsize-25px">พริกเล็ก แต่ปรพโยชน์ไม่เล็ก</a>
             </Link>
         </div>
         <div className="col-xs-12 col-lg-4">
-        <Link prefetch href="../pages/fact/factorganic.js">
-            <img className = "fit2" src = {Oganic}  width = "320px" height = "250px"/>
+        <Link prefetch href="fact/factorganic">
+            <img className = "fit2" src = {Oganic} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
-            <Link prefetch href="../pages/fact/factorganic.js">
+            <Link prefetch href="fact/factorganic">
             <a className = "Nithan fontsize-25px">ผลิตภัณฑ์ออแกนิกคืออะไร ?</a>
             </Link>
         </div>
         <br/><br/>
         <div className="col-xs-12 col-lg-4">
         <Link prefetch href="/">
-            <img className = "fit2" src = {Protein}  width = "320px" height = "250px"/>
+            <img className = "fit2" src = {Protein} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
             <Link prefetch href="/">
@@ -48,29 +48,29 @@ const factpage = () => (
     <br/>
     <div className="row">
         <div className="col-xs-12 col-lg-4">
-        <Link prefetch href="../pages/fact/facthungry.js">
+        <Link prefetch href="fact/facthungry">
             <img className = "fit2" src = {Hungry} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
-            <Link prefetch href="../pages/fact/facthungry.js">
+            <Link prefetch href="fact/facthungry">
             <a className = "Nithan fontsize-25px">หิวบ่อยสาเหตุมาจากอะไร</a>
             </Link>
         </div>
         <div className="col-xs-12 col-lg-4">
-        <Link prefetch href="../pages/fact/factkamin.js">
+        <Link prefetch href="fact/factkamin">
             <img className = "fit2" src = {Kamin} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
-            <Link prefetch href="../pages/fact/factkamin.js">
-            <a className = "Nsithan fontsize-25px">ขมิ้นชัน อาหารเพื่อสุขภาพ</a>
+            <Link prefetch href="fact/factkamin">
+            <a className = "Nithan fontsize-25px">ขมิ้นชัน อาหารเพื่อสุขภาพ</a>
             </Link>
         </div>
         <div className="col-xs-12 col-lg-4">
-            <Link prefetch href="../pages/fact/factdisease.js">
-            <img className = "fit2" src = {Dsea}  width = "320px" height = "250px"/>
+            <Link prefetch href="fact/factdisease">
+            <img className = "fit2" src = {Deas} width = "320px" height = "250px"/>
             </Link>
             <br/><br/>
-            <Link prefetch href="../pages/fact/factdisease.js">
+            <Link prefetch href="fact/factdisease">
             <a className = "Nithan fontsize-25px">ความเหมือนที่แตกต่างของสองโรคนี้</a>
             </Link>
             <br/><br/>
