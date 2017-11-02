@@ -5,7 +5,7 @@ import './components/dist/css/css-style.css';
 
 import Home from './components/Home';
 import HealthyKitchen from './components/healthykitchenpage';
-import HealthyFacts from './components/factpage';
+import HealthyFacts from './components/fact/factpage';
 import Bmi from './components/Bmi';
 import About from './components/About';
 
@@ -17,6 +17,15 @@ import BananaTopping from './components/kitchen/bananatopping'
 import Riceberrymango from './components/kitchen/riceberry+mango'
 import Steakchicken from './components/kitchen/steakchicken'
 import Steambun from './components/kitchen/steambuns'
+
+//fact page
+import factpage from './components/fact/factpage'
+import Chili from './components/fact/factchilli'
+import Desease from './components/fact/factdisease'
+import Hungry from './components/fact/facthungry'
+import Kamin from './components/fact/factkamin'
+import Organic from  './components/fact/factorganic'
+
 
 // bootstrap 4.0
 import './components/dist/bootstrap-4.0.0-beta.2/dist/css/bootstrap.min.css'
@@ -79,10 +88,11 @@ class NavTop extends React.Component {
                 <div id="mySidenav" className="sidenav" style={{ width: this.state.navWidth, opacity: this.state.navAlpha }}>
                     <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>&times;</a>
                     <Link to='/' onClick={this.closeNav}>Home</Link>
-                    <Link to='healthy-kitchen' onClick={this.closeNav}>Healthy Kitchen</Link>
-                    <Link to='healthy-facts' onClick={this.closeNav}>Healthy Facts</Link>
-                    <Link to='bmi-calculator' onClick={this.closeNav}>Calculator</Link>
-                    <Link to='about' onClick={this.closeNav}>About</Link>
+
+                    <Link to='/healthy-kitchen' onClick={this.closeNav}>Healthy Kitchen</Link>
+                    <Link to='/healthy-facts' onClick={this.closeNav}>Healthy Facts</Link>
+                    <a href='/bmi-calculator' onClick={this.closeNav}>Calculator</a>
+                    <Link to='/about' onClick={this.closeNav}>About</Link>
                 </div>
             <div onClick={this.navLoseFocus}>
                 {/* <h2>Animated Sidenav Example Full Width</h2>
@@ -110,8 +120,12 @@ class NavTop extends React.Component {
                     <Route path='/kitchen/bananaTopping' component={BananaTopping} />
                     <Route path='/kitchen/riceberrymango' component={Riceberrymango} />
                     <Route path='/kitchen/steakchicken' component={Steakchicken} />
-                    
-                    
+                    <Route exact path='/fact' component={HealthyFacts} /> 
+                    <Route path='/fact/factchilli' component={Chili} />
+                    <Route path='/fact/Desease' component={Desease} />
+                    <Route path='/fact/Hungry' component={Hungry} />
+                    <Route path='/fact/Kamin' component={Kamin} />
+                    <Route path='/fact/Organic' component={Organic} />
                     
                 </Switch>
             </div>
