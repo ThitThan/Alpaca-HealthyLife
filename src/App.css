@@ -10,24 +10,26 @@ body {
 }
 
 .bg{
+    /* background-repeat: repeat-x!important; */
+   
     z-index: -1;
     position: fixed;
     width: 100%;
     height: 100%;
     }
     .image2{
-       
+        object-fit: cover;
         display: none;
      }
      
-     @media only screen and (max-width: 500px){
+     @media  screen and (max-width: 500px){
         .image1{
-            
+           
           display: none;
         }
      
         .image2{
-            
+           
           display: block;
         }
      }
