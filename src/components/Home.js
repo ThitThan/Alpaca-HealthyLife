@@ -27,24 +27,21 @@ class Home extends React.Component {
           };
 
         return (
-            <div>
-                <div className = "container">
-                    <br/>
-                    <h1>HEALTHY LIFE</h1>
-                    {/* <p>u n d e r   c o n s t r u c t i o n</p> */}
-                    <br/>
-        
-                {/* <Fitt/> */}
-                
-                    <Slider {...settings} className='row'>
-                        <div className="col-4"> <img src={In01} className="fitt"/></div>
-                        <div className="col-4"><img src={In02} className="fitt"/></div>
-                        <div className="col-4"><img src={In03} className="fitt"/></div>
-                    </Slider>
+            <div className = "container">
+                <br/>
+                <h1>HEALTHY LIFE</h1>
+                {/* <p>u n d e r   c o n s t r u c t i o n</p> */}
+                <br/>
+    
+            {/* <Fitt/> */}
+            
+                <Slider {...settings} className='row'>
+                    <div className="col-4"> <img src={In01} className="fitt"/></div>
+                    <div className="col-4"><img src={In02} className="fitt"/></div>
+                    <div className="col-4"><img src={In03} className="fitt"/></div>
+                </Slider>
 
-                    <NewsUpdate />
-                </div>
-                
+                <NewsUpdate />
                 <Footer />
             </div>
         );
