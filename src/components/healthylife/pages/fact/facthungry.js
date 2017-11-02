@@ -5,6 +5,8 @@ import Footer from '../components/footer'
 // import '../../static/css/factchilli.css'
 import '../../static/css/Style.css'
 
+import Img from '../../static/img/bgweb.png'
+
 const hungry =()=> (
 <div>
     <div className="container">
@@ -21,7 +23,7 @@ const hungry =()=> (
             <p className="p2">นอกจากความหิวตามกลไกของร่างกายแล้ว ความหิวอาจมาจากสาเหตุอื่นๆ ได้อีก ทั้งปัจจัยทางสุขภาพ อารมณ์ และสังคม สำหรับคนที่หิวบ่อยๆ ลองตรวจเช็กดูว่าความหิวที่มากเกินการควบคุมนั้นมาจากสาเหตุอะไร และควรแก้ไขอย่างไร</p>
             <p className="b1">ปัจจัยความหิวที่มาจากการรับประทานอาหารที่ไม่ถูกต้อง</p>
             <p className="p2">เคยไหมที่ทานอาหารบางประเภทแล้วรู้สึกว่าอิ่มได้ไม่นาน เผลอแปร้บเดียวก็หิวอีกแล้ว ความหิวแบบนี้ มีสาเหตุมาจากอาหารที่ทานเข้าไปนั้นทำให้หิวมากขึ้น และหิวเร็วขึ้น</p>
-            <img className="bg" src='../static/img/bgweb.png' />
+            {/* <img className="bg" src={Img} /> */}
             <div className = "">
             <button type="button" class="btn right font-detail color-button">Back</button><br/><br/>  
             </div>  

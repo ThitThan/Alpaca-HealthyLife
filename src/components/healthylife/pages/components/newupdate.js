@@ -13,7 +13,7 @@ import ImgNewsUpdate from "../../static/img/newupdate.png";
 
 const newupdate = () => (
 
-<div className = "container">
+<div>
     {/* <p>News Update !</p> */}
     <img src={ImgNewsUpdate} height='84px' style={{ marginBottom: '16px' }} />
     <div class="row center">
