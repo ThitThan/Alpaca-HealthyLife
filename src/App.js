@@ -21,6 +21,8 @@ import './static/css/jewStyle.css'
 
 import HeaderLogo from './components/img/header-logo.png'
 
+import SteamBun from './components/healthylife/pages/kitchen/steambuns'
+
 import './components/font-awesome-4.7.0/css/font-awesome.min.css'
 // import Bg from './components/img/bgweb.png'
  
@@ -87,7 +89,9 @@ class NavTop extends React.Component {
                 <div className='titleBar'>
                     {/* <span style={{ fontSize: '24px', cursor: 'pointer', marginLeft: '24px', color: '#ffffff' }} onClick={this.openNav} >&#9776;</span> */}
                     <i className='fa fa-bars' aria-hidden='true' style={{ fontSize: '24px', cursor: 'pointer', marginTop: '4px', color: '#ffffff' }} onClick={this.openNav} />
-                    <img src={HeaderLogo} alt='' height='32px'/>
+                    <Link to='/'>
+                        <img src={HeaderLogo} alt='' height='32px'/>
+                    </Link>
                     <div style={{ width: '24px'}}/>
                 </div>
 
@@ -99,8 +103,9 @@ class NavTop extends React.Component {
                     <Route path='/about' component={About}/>
                     <Route exact path='/kitchen' component={Kitchenpage} />
                     
-                    {/* <Route path='/healthy-kitchen/bananamuffin' component={BananaMuffin} />
-                    <Route path='/healthy-kitchen/bananatopping' component={BananaTopping} /> */}
+                    {/* <Route path='/healthy-kitchen/bananamuffin' component={BananaMuffin} /> */}
+                    <Route path='/kitchen/steambun' component={SteamBun} />
+                    {/* <Route path='/healthy-kitchen/bananatopping' component={BananaTopping} /> */}
                     
                 </Switch>
             </div>
