@@ -73,7 +73,7 @@ class NavTop extends React.Component {
                 <div id="mySidenav" className="sidenav" style={{ width: this.state.navWidth, opacity: this.state.navAlpha }}>
                     <a href="javascript:void(0)" className="closebtn" onClick={this.closeNav}>&times;</a>
                     <Link to='/' onClick={this.closeNav}>Home</Link>
-                    <Link to='healthy-kitchen' onClick={this.closeNav}>Healthy Kitchen</Link>
+                    <Link to='kitchen' onClick={this.closeNav}>Healthy Kitchen</Link>
                     <Link to='healthy-facts' onClick={this.closeNav}>Healthy Facts</Link>
                     <Link to='bmi-calculator' onClick={this.closeNav}>Calculator</Link>
                     <Link to='about' onClick={this.closeNav}>About</Link>
@@ -93,12 +93,14 @@ class NavTop extends React.Component {
 
                 <Switch>
                     <Route exact path='/' component={Home}/>
-                    <Route path='/healthy-kitchen' component={HealthyKitchen}/>
+                    <Route path='/kitchen' component={Kitchenpage}/>
                     <Route path='/healthy-facts' component={HealthyFacts}/>
                     <Route path='/bmi-calculator' component={Bmi}/>
                     <Route path='/about' component={About}/>
-                    <Route exact path='/kitchen' component={Kitchenpage} />                    
-                    <Route path='/kitchen/steambuns' component={Kitchenpage} />
+                    <Route exact path='/kitchen' component={Kitchenpage} />
+                    
+                    {/* <Route path='/healthy-kitchen/bananamuffin' component={BananaMuffin} />
+                    <Route path='/healthy-kitchen/bananatopping' component={BananaTopping} /> */}
                     
                 </Switch>
             </div>
