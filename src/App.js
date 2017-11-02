@@ -5,7 +5,7 @@ import './components/dist/css/css-style.css';
 
 import Home from './components/Home';
 import HealthyKitchen from './components/healthykitchenpage';
-import HealthyFacts from './components/factpage';
+import HealthyFacts from './components/HealthyFacts';
 import Bmi from './components/Bmi';
 import About from './components/About';
 

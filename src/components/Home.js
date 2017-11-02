@@ -8,7 +8,7 @@ import In02 from './img/in02.jpg'
 import In03 from './img/in03.jpg'
 
 import NewsUpdate from './healthylife/pages/components/newupdate.js'
-import Footer from './healthylife/pages/components/footer.js'
+import Footer from '../components/healthylife/pages/components/footer'
 
 class Home extends React.Component {
     render() {
