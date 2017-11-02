@@ -43,6 +43,9 @@ class Home extends React.Component {
                     </Slider>
 
                     <NewsUpdate />
+
+                    <br />
+                    
                 </div>
             <Footer />
             </div>
